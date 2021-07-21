@@ -1,0 +1,25 @@
+{
+  "name": "electron-remote-control",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/main/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run start:renderer\" \"wait-on http://localhost:3000 && npm run start:electron\"",
+    "start:electron": "electron .",
+    "start:renderer": "cd app/renderer/src/my-main && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "electron": "^13.1.6",
+    "wait-on": "^6.0.0"
+  },
+  "dependencies": {
+    "electron-is-dev": "^2.0.0",
+    "g-xlsx-style": "^0.1.1",
+    "vkey": "^1.0.1"
+  }
+}

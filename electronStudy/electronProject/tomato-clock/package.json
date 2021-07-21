@@ -1,0 +1,16 @@
+{
+  "name": "electronProject",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^12.0.14"
+  },
+  "dependencies": {
+    "time.js": "0.0.1",
+    "timer.js": "^1.0.4"
+  },
+  "scripts": {
+    "start": "electron ."
+  }
+}
